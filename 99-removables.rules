@@ -1,0 +1,5 @@
+ACTION=="add", SUBSYSTEM=="thunderbolt", ATTR{authorized}=="0", ATTR{authorized}="1"
+ACTION=="add", SUBSYSTEM=="thunderbolt", ATTRS{iommu_dma_protection}=="1", ATTR{authorized}=="0", ATTR{authorized}="1"
+ACTION=="add|change", ATTRS{name}=="SYNA1202:00 06CB:CD79 Touchpad", ENV{LIBINPUT_IGNORE_DEVICE}="1"
+ACTION=="add|change", ATTRS{name}=="SYNA1202:00 06CB:CD79 Mouse", ENV{LIBINPUT_IGNORE_DEVICE}="1"
+ACTION=="add|change", ATTRS{name}=="Compx 2.4G Wireless Receiver Mouse", ENV{LIBINPUT_IGNORE_DEVICE}="1"
